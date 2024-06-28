@@ -1,0 +1,24 @@
+ip routing 
+
+
+{% for lo in devices[inventory_hostname]['interfaces']['loopbacks'] %}
+interface {{ lo }}
+   ip address {{ devices[inventory_hostname]['interfaces']['loopbacks'][lo] }}/32
+   isis enable {{ global_settings['isis_instance'] }}
+{% endfor %}
+
+{% for p2p in devices[inventory_hostname]['interfaces']['p2p'] %}
+interface {{ p2p }}
+   no switchport
+   ip address unnumbered loopback0
+   mtu {{ global_settings['mtu'] }}
+   isis enable {{ global_settings['isis_instance'] }}
+{% endfor %}
+
+router isis {{ global_settings['isis_instance'] }}
+   net {{ devices[inventory_hostname]['isis']['area'] }}.{{ devices[inventory_hostname]['isis']['id'] }}.00
+   is-hostname {{ inventory_hostname }}
+   router-id ipv4 {{ devices[inventory_hostname]['interfaces']['loopbacks']['loopback0'] }}
+   is-type {{ devices[inventory_hostname]['isis']['type'] }}
+   !
+   address-family ipv4 unicast

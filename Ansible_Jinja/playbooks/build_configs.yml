@@ -1,0 +1,9 @@
+---
+- name: Build configs
+  hosts: spines, leafs
+  tasks:
+    - name: Build config from template and data model
+      ansible.builtin.template:
+        src: "../templates/underlay.j2"
+        dest: "configs/{{ inventory_hostname }}.cfg"
+        mode: "0644"

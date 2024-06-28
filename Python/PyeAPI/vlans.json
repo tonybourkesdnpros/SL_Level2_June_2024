@@ -1,0 +1,15 @@
+{
+    "name": "Internal",
+    "dynamic": False,
+    "status": "active",
+    "interfaces": {
+        "Ethernet3": {
+            "privatePromoted": False,
+            "blocked": None
+        },
+        "Ethernet4": {
+            "privatePromoted": False,
+            "blocked": None
+        }
+    }
+}

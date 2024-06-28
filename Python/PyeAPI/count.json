@@ -1,0 +1,194 @@
+[
+    {
+        "command": "show isis neighbors",
+        "result": {
+            "vrfs": {
+                "default": {
+                    "isisInstances": {
+                        "Osiris": {
+                            "neighbors": {
+                                "0000.0001.0004": {
+                                    "adjacencies": [
+                                        {
+                                            "hostname": "leaf4",
+                                            "circuitId": "leaf4.db",
+                                            "interfaceName": "Ethernet1",
+                                            "state": "up",
+                                            "lastHelloTime": 1719601667,
+                                            "snpa": "aa:c1:ab:38:6b:a7",
+                                            "level": "level-1",
+                                            "details": {
+                                                "priority": 64,
+                                                "advertisedHoldTime": 9,
+                                                "stateChanged": 1719601052,
+                                                "interfaceAddressFamily": "ipv4",
+                                                "neighborAddressFamily": "ipv4",
+                                                "ip4Address": "192.168.101.4",
+                                                "areaIds": [
+                                                    "49.0001"
+                                                ],
+                                                "bfdIpv4State": "adminDown",
+                                                "bfdIpv6State": "adminDown",
+                                                "srEnabled": False,
+                                                "grSupported": "Supported",
+                                                "grState": ""
+                                            },
+                                            "routerIdV4": "0.0.0.0"
+                                        },
+                                        {
+                                            "hostname": "leaf4",
+                                            "circuitId": "leaf3.de",
+                                            "interfaceName": "Ethernet2",
+                                            "state": "up",
+                                            "lastHelloTime": 1719601665,
+                                            "snpa": "aa:c1:ab:56:91:7f",
+                                            "level": "level-1",
+                                            "details": {
+                                                "priority": 64,
+                                                "advertisedHoldTime": 30,
+                                                "stateChanged": 1719601054,
+                                                "interfaceAddressFamily": "ipv4",
+                                                "neighborAddressFamily": "ipv4",
+                                                "ip4Address": "192.168.101.4",
+                                                "areaIds": [
+                                                    "49.0001"
+                                                ],
+                                                "bfdIpv4State": "adminDown",
+                                                "bfdIpv6State": "adminDown",
+                                                "srEnabled": False,
+                                                "grSupported": "Supported",
+                                                "grState": ""
+                                            },
+                                            "routerIdV4": "0.0.0.0"
+                                        }
+                                    ]
+                                },
+                                "0000.0002.0001": {
+                                    "adjacencies": [
+                                        {
+                                            "hostname": "spine1",
+                                            "circuitId": "spine1.95",
+                                            "interfaceName": "Ethernet3",
+                                            "state": "up",
+                                            "lastHelloTime": 1719601665,
+                                            "snpa": "aa:c1:ab:f9:a6:fe",
+                                            "level": "level-1",
+                                            "details": {
+                                                "priority": 64,
+                                                "advertisedHoldTime": 9,
+                                                "stateChanged": 1719601047,
+                                                "interfaceAddressFamily": "ipv4",
+                                                "neighborAddressFamily": "ipv4",
+                                                "ip4Address": "192.168.101.101",
+                                                "areaIds": [
+                                                    "49.0001"
+                                                ],
+                                                "bfdIpv4State": "adminDown",
+                                                "bfdIpv6State": "adminDown",
+                                                "srEnabled": False,
+                                                "grSupported": "Supported",
+                                                "grState": ""
+                                            },
+                                            "routerIdV4": "0.0.0.0"
+                                        }
+                                    ]
+                                },
+                                "0000.0002.0002": {
+                                    "adjacencies": [
+                                        {
+                                            "hostname": "spine2",
+                                            "circuitId": "leaf3.a4",
+                                            "interfaceName": "Ethernet4",
+                                            "state": "up",
+                                            "lastHelloTime": 1719601660,
+                                            "snpa": "aa:c1:ab:36:71:58",
+                                            "level": "level-1",
+                                            "details": {
+                                                "priority": 64,
+                                                "advertisedHoldTime": 30,
+                                                "stateChanged": 1719601045,
+                                                "interfaceAddressFamily": "ipv4",
+                                                "neighborAddressFamily": "ipv4",
+                                                "ip4Address": "192.168.101.102",
+                                                "areaIds": [
+                                                    "49.0001"
+                                                ],
+                                                "bfdIpv4State": "adminDown",
+                                                "bfdIpv6State": "adminDown",
+                                                "srEnabled": False,
+                                                "grSupported": "Supported",
+                                                "grState": ""
+                                            },
+                                            "routerIdV4": "0.0.0.0"
+                                        }
+                                    ]
+                                },
+                                "0000.0002.0003": {
+                                    "adjacencies": [
+                                        {
+                                            "hostname": "spine3",
+                                            "circuitId": "spine3.b3",
+                                            "interfaceName": "Ethernet5",
+                                            "state": "up",
+                                            "lastHelloTime": 1719601667,
+                                            "snpa": "aa:c1:ab:bd:e6:b1",
+                                            "level": "level-1",
+                                            "details": {
+                                                "priority": 64,
+                                                "advertisedHoldTime": 9,
+                                                "stateChanged": 1719601047,
+                                                "interfaceAddressFamily": "ipv4",
+                                                "neighborAddressFamily": "ipv4",
+                                                "ip4Address": "192.168.101.103",
+                                                "areaIds": [
+                                                    "49.0001"
+                                                ],
+                                                "bfdIpv4State": "adminDown",
+                                                "bfdIpv6State": "adminDown",
+                                                "srEnabled": False,
+                                                "grSupported": "Supported",
+                                                "grState": ""
+                                            },
+                                            "routerIdV4": "0.0.0.0"
+                                        }
+                                    ]
+                                },
+                                "0000.0002.0004": {
+                                    "adjacencies": [
+                                        {
+                                            "hostname": "spine4",
+                                            "circuitId": "spine4.bf",
+                                            "interfaceName": "Ethernet6",
+                                            "state": "up",
+                                            "lastHelloTime": 1719601668,
+                                            "snpa": "aa:c1:ab:b7:62:ac",
+                                            "level": "level-1",
+                                            "details": {
+                                                "priority": 64,
+                                                "advertisedHoldTime": 9,
+                                                "stateChanged": 1719601048,
+                                                "interfaceAddressFamily": "ipv4",
+                                                "neighborAddressFamily": "ipv4",
+                                                "ip4Address": "192.168.101.104",
+                                                "areaIds": [
+                                                    "49.0001"
+                                                ],
+                                                "bfdIpv4State": "adminDown",
+                                                "bfdIpv6State": "adminDown",
+                                                "srEnabled": False,
+                                                "grSupported": "Supported",
+                                                "grState": ""
+                                            },
+                                            "routerIdV4": "0.0.0.0"
+                                        }
+                                    ]
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        },
+        "encoding": "json"
+    }
+]

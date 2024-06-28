@@ -1,0 +1,15 @@
+---
+- name: Upload Configlets
+  hosts: cvp1
+  vars:
+    path: "{{lookup('env','PWD')}}"
+  vars_files:
+    - ../vars/CVP_model.yml
+  tasks:
+    - name: Upload Configlets for ISIS Underlay
+      arista.cvp.cv_configlet_v3:
+        configlets: "{{ CVP_CONFIGLETS_ISIS }}"
+        state: present
+    - name: Apply configlets for ISIS
+      arista.cvp.cv_device_v3:
+        devices: "{{ CVP_DEVICES_ISIS }}"

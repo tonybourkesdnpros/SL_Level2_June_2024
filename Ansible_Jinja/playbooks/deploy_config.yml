@@ -1,0 +1,7 @@
+---
+- name: Deploy configs through ansible
+  hosts: leafs, spines
+  tasks:
+    - name: Push configs
+      arista.eos.eos_config:
+        src: "../configs/{{ inventory_hostname }}.cfg"

@@ -1,0 +1,15 @@
+---
+- name: Init hosts
+  hosts: all
+  tasks:
+    - name: Configure user automator
+      arista.eos.eos_user:
+        name: automator
+        configured_password: "password"
+        privilege: 15
+        role: network-admin
+    - name: Configure user SSH key
+      arista.eos.eos_user:
+        name: automator
+        sshkey: "{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
+        state: present

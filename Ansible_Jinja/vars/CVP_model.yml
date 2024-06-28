@@ -1,0 +1,58 @@
+path: "{{lookup('env','PWD')}}" 
+
+CVP_CONFIGLETS_ISIS:
+
+  spine1_isis: "{{lookup('file','{{path}}/configs/isis/spine1.cfg')}}"
+  spine2_isis: "{{lookup('file','{{path}}/configs/isis/spine2.cfg')}}"
+  spine3_isis: "{{lookup('file','{{path}}/configs/isis/spine3.cfg')}}"
+  spine4_isis: "{{lookup('file','{{path}}/configs/isis/spine4.cfg')}}"  
+  leaf1_isis: "{{lookup('file','{{path}}/configs/isis/leaf1.cfg')}}"
+  leaf2_isis: "{{lookup('file','{{path}}/configs/isis/leaf2.cfg')}}"
+  leaf3_isis: "{{lookup('file','{{path}}/configs/isis/leaf3.cfg')}}"
+  leaf4_isis: "{{lookup('file','{{path}}/configs/isis/leaf4.cfg')}}"  
+  borderleaf1_isis: "{{lookup('file','{{path}}/configs/isis/borderleaf1.cfg')}}"
+  borderleaf2_isis: "{{lookup('file','{{path}}/configs/isis/borderleaf2.cfg')}}"
+
+CVP_DEVICES_ISIS:
+
+  - fqdn: 'spine1'
+    parentContainerName: 'Spine'
+    configlets:
+      - 'spine1_isis'
+  - fqdn: 'spine2'
+    parentContainerName: 'Spine'
+    configlets:
+      - 'spine2_isis'
+  - fqdn: 'spine3'
+    parentContainerName: 'Spine'
+    configlets:
+      - 'spine3_isis'
+  - fqdn: 'spine4'
+    parentContainerName: 'Spine'
+    configlets:
+      - 'spine4_isis'
+  - fqdn: 'leaf1'
+    parentContainerName: 'Leaf'
+    configlets:
+
+      - 'leaf1_isis'
+  - fqdn: 'leaf2'
+    parentContainerName: 'Leaf'
+    configlets:
+      - 'leaf2_isis'
+  - fqdn: 'leaf3'
+    parentContainerName: 'Leaf'
+    configlets:
+      - 'leaf3_isis'
+  - fqdn: 'leaf4'
+    parentContainerName: 'Leaf'
+    configlets:
+      - 'leaf4_isis'
+  - fqdn: 'borderleaf1'
+    parentContainerName: 'Leaf'
+    configlets:
+      - 'borderleaf1_isis'
+  - fqdn: 'borderleaf2'
+    parentContainerName: 'Leaf'
+    configlets:
+      - 'borderleaf2_isis'

@@ -1,0 +1,66 @@
+{
+    "command": "show vlan",
+    "result": {
+        "vlans": {
+            "1": {
+                "name": "default",
+                "dynamic": False,
+                "status": "active",
+                "interfaces": {
+                    "Ethernet2": {
+                        "privatePromoted": False,
+                        "blocked": None
+                    },
+                    "Ethernet7": {
+                        "privatePromoted": False,
+                        "blocked": None
+                    },
+                    "Ethernet8": {
+                        "privatePromoted": False,
+                        "blocked": None
+                    },
+                    "Ethernet9": {
+                        "privatePromoted": False,
+                        "blocked": None
+                    },
+                    "Ethernet10": {
+                        "privatePromoted": False,
+                        "blocked": None
+                    }
+                }
+            },
+            "10": {
+                "name": "DMZ",
+                "dynamic": False,
+                "status": "active",
+                "interfaces": {}
+            },
+            "20": {
+                "name": "Internal",
+                "dynamic": False,
+                "status": "active",
+                "interfaces": {}
+            },
+            "30": {
+                "name": "Sales",
+                "dynamic": False,
+                "status": "active",
+                "interfaces": {}
+            },
+            "40": {
+                "name": "QA",
+                "dynamic": False,
+                "status": "active",
+                "interfaces": {}
+            },
+            "50": {
+                "name": "Guest",
+                "dynamic": False,
+                "status": "active",
+                "interfaces": {}
+            }
+        },
+        "sourceDetail": ""
+    },
+    "encoding": "json"
+}

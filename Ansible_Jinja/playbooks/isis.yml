@@ -1,0 +1,9 @@
+---
+- name: Build isis configs
+  hosts: fabric
+  tasks:
+    - name: Build config from template and data model
+      ansible.builtin.template:
+        src: "../templates/isis.j2"
+        dest: "configs/isis/{{ inventory_hostname }}.cfg"
+        mode: "0644"

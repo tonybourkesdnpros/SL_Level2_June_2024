@@ -1,0 +1,193 @@
+{
+    "spanningTreeInstances": {
+        "MST0": {
+            "protocol": "mstp",
+            "bridge": {
+                "priority": 32768,
+                "systemIdExtension": 0,
+                "macAddress": "00:1c:73:c3:c6:01",
+                "helloTime": 2.0,
+                "maxAge": 20,
+                "forwardDelay": 15
+            },
+            "rootPort": {
+                "portNumber": 3,
+                "interface": "Ethernet3",
+                "cost": {
+                    "internalCost": 20000,
+                    "externalCost": 0
+                }
+            },
+            "rootBridge": {
+                "priority": 32768,
+                "systemIdExtension": 0,
+                "macAddress": "00:1c:73:b1:c6:01",
+                "helloTime": 2.0,
+                "maxAge": 20,
+                "forwardDelay": 15
+            },
+            "interfaces": {
+                "Ethernet6": {
+                    "role": "designated",
+                    "state": "forwarding",
+                    "cost": 20000,
+                    "priority": 128,
+                    "portNumber": 6,
+                    "linkType": "p2p",
+                    "boundaryType": "none",
+                    "isEdgePort": False,
+                    "inconsistentFeatures": {
+                        "bridgeAssurance": False,
+                        "loopGuard": False,
+                        "rootGuard": False,
+                        "mstPvstBorder": False
+                    }
+                },
+                "Ethernet2": {
+                    "role": "designated",
+                    "state": "forwarding",
+                    "cost": 20000,
+                    "priority": 128,
+                    "portNumber": 2,
+                    "linkType": "p2p",
+                    "boundaryType": "none",
+                    "isEdgePort": False,
+                    "inconsistentFeatures": {
+                        "bridgeAssurance": False,
+                        "loopGuard": False,
+                        "rootGuard": False,
+                        "mstPvstBorder": False
+                    }
+                },
+                "Ethernet3": {
+                    "role": "root",
+                    "state": "forwarding",
+                    "cost": 20000,
+                    "priority": 128,
+                    "portNumber": 3,
+                    "linkType": "p2p",
+                    "boundaryType": "none",
+                    "isEdgePort": False,
+                    "inconsistentFeatures": {
+                        "bridgeAssurance": False,
+                        "loopGuard": False,
+                        "rootGuard": False,
+                        "mstPvstBorder": False
+                    }
+                },
+                "Ethernet5": {
+                    "role": "designated",
+                    "state": "forwarding",
+                    "cost": 20000,
+                    "priority": 128,
+                    "portNumber": 5,
+                    "linkType": "p2p",
+                    "boundaryType": "none",
+                    "isEdgePort": False,
+                    "inconsistentFeatures": {
+                        "bridgeAssurance": False,
+                        "loopGuard": False,
+                        "rootGuard": False,
+                        "mstPvstBorder": False
+                    }
+                },
+                "Ethernet9": {
+                    "role": "designated",
+                    "state": "forwarding",
+                    "cost": 20000,
+                    "priority": 128,
+                    "portNumber": 9,
+                    "linkType": "p2p",
+                    "boundaryType": "none",
+                    "isEdgePort": False,
+                    "inconsistentFeatures": {
+                        "bridgeAssurance": False,
+                        "loopGuard": False,
+                        "rootGuard": False,
+                        "mstPvstBorder": False
+                    }
+                },
+                "Ethernet7": {
+                    "role": "designated",
+                    "state": "forwarding",
+                    "cost": 20000,
+                    "priority": 128,
+                    "portNumber": 7,
+                    "linkType": "p2p",
+                    "boundaryType": "none",
+                    "isEdgePort": False,
+                    "inconsistentFeatures": {
+                        "bridgeAssurance": False,
+                        "loopGuard": False,
+                        "rootGuard": False,
+                        "mstPvstBorder": False
+                    }
+                },
+                "Ethernet8": {
+                    "role": "designated",
+                    "state": "forwarding",
+                    "cost": 20000,
+                    "priority": 128,
+                    "portNumber": 8,
+                    "linkType": "p2p",
+                    "boundaryType": "none",
+                    "isEdgePort": True,
+                    "inconsistentFeatures": {
+                        "bridgeAssurance": False,
+                        "loopGuard": False,
+                        "rootGuard": False,
+                        "mstPvstBorder": False
+                    }
+                },
+                "Ethernet10": {
+                    "role": "designated",
+                    "state": "forwarding",
+                    "cost": 20000,
+                    "priority": 128,
+                    "portNumber": 10,
+                    "linkType": "p2p",
+                    "boundaryType": "none",
+                    "isEdgePort": True,
+                    "inconsistentFeatures": {
+                        "bridgeAssurance": False,
+                        "loopGuard": False,
+                        "rootGuard": False,
+                        "mstPvstBorder": False
+                    }
+                },
+                "Ethernet1": {
+                    "role": "designated",
+                    "state": "forwarding",
+                    "cost": 20000,
+                    "priority": 128,
+                    "portNumber": 1,
+                    "linkType": "p2p",
+                    "boundaryType": "none",
+                    "isEdgePort": False,
+                    "inconsistentFeatures": {
+                        "bridgeAssurance": False,
+                        "loopGuard": False,
+                        "rootGuard": False,
+                        "mstPvstBorder": False
+                    }
+                },
+                "Ethernet4": {
+                    "role": "alternate",
+                    "state": "discarding",
+                    "cost": 20000,
+                    "priority": 128,
+                    "portNumber": 4,
+                    "linkType": "p2p",
+                    "boundaryType": "none",
+                    "isEdgePort": False,
+                    "inconsistentFeatures": {
+                        "bridgeAssurance": False,
+                        "loopGuard": False,
+                        "rootGuard": False,
+                        "mstPvstBorder": False
+                    }
+                }
+            }
+        }
+    }
+}
